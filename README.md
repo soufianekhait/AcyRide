@@ -5,4 +5,4 @@ AcyRide is an online peer-to-peer ridesharing application that allows users to b
 - Web Server WAMP/MAMP
 
 ### Getting started
-Use git or the download button (on the right) to download the game source code.
+Use git or the download button (on the right) to download the website source code.
