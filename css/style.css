@@ -1,0 +1,194 @@
+* {
+	/* font-family: Helvetica, sans-serif; */
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar-header {
+	height: 100px;
+	transition: height .5s;
+}
+
+.navbar-brand {
+	background: url(../img/logo.png) center / contain no-repeat;
+	width: 400px;
+	height: 100px;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 5px;
+	position: absolute;
+	transition: width .5s, height .5s;
+}
+
+.navbar-nav li a {
+	padding: 15px 20px;
+	margin: 20px 5px;
+	color: #1b1b1e !important;
+	transition: padding .5s, margin .5s, background-color .5s;
+	/* border-radius: 10px; */
+	border: 1px solid;
+}
+
+.navbar-default.scrolled-nav .container .navbar-header {
+	/* scrolled menu bar*/
+	height: 50px;
+}
+
+.navbar-default.scrolled-nav .container .navbar-header .navbar-brand {
+	/* scrolled logo */
+	width: 200px;
+	height: 50px;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 2px;
+}
+
+.navbar-default.scrolled-nav .container .navbar-nav li a {
+	/* scrolled menu buttons */
+	padding: 10px 20px;
+	margin: 5px 5px;
+}
+
+.profile {
+	display: block;
+	line-height: 20px;
+	padding: 15px 20px;
+	margin: 20px 5px;
+	color: #1b1b1e !important;
+	list-style: none;
+	float: right;
+	transition: padding .5s, margin .5s;
+}
+
+.profile li {
+	float: left;
+}
+
+.profile li:last-child {
+	/* font awesome logout */
+	padding-left: 35px;
+}
+
+.profile li:last-child {
+	text-decoration: none;
+}
+
+.navbar-default.scrolled-nav .container .profile {
+	/* scrolled menu logged in profile text */
+	padding: 10px 20px;
+	margin: 5px 5px;
+}
+
+.splash-container {
+	background: #1b1b1e;
+	z-index: -1;
+	/* The following styles are required for the "scroll-over" effect */
+	width: 100%;
+	top: -15%;
+	position: fixed !important;
+	left: calc(-50vw + 50%);
+	right: calc(-50vw + 50%);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-wrapper {
+	margin-top: 100px;
+	width: 100%;
+	background: white;
+	flex: 1 0 auto;
+	margin-bottom: -50px;
+}
+
+.content-wrapper-home {
+	/* These styles are required for the "scroll-over" effect */
+	position: absolute;
+	top: 80%;
+	margin-bottom: -50px;
+}
+
+.main-content {
+	/* height: 1000px; */
+	padding: 10px 20px;
+	font-size: 1.5em;
+	max-height: calc(100vh - 70px);
+}
+
+.btn-default:hover {
+	/* background-color: #d8dbe2; */
+}
+
+.btn-hover:hover {
+	background-color: rgba(51, 122, 183, 0.5) !important;
+}
+
+.show-grid [class^="col-"] {
+	background-color: #d8dbe2;
+	box-shadow: 0px 0px 0px 1px black inset;
+}
+
+.help-block {
+	font-size: 0.75em;
+}
+
+footer {
+	margin-top: 175px;
+	height: 60px;
+	width: 100%;
+	padding: 10px 35px;
+	border-top: 1px solid #d8dbe2;
+	background: white;
+}
+
+#map {
+	height: 100%;
+	margin-top: 20px;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+#map_canvas {
+	height: 100%;
+	width: 100%;
+}
+
+.content-image {
+	margin-top: 40px;
+}
+
+textarea {
+	resize: none;
+}
+
+.no-list-style {
+	list-style: none;
+}
+
+.img-signin {
+	width: 500px;
+	margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+	/* boostrap smaller than md */
+	.navbar-brand {
+		/* logo */
+		width: 300px;
+	}
+	.navbar-default .container .navbar-nav li a {
+		/* scrolled menu buttons */
+		padding: 10px 10px;
+		margin: 25px 5px;
+	}
+}
